@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Kasipallo
+        </title>
+        <style>
+            body{
+                background-image: url(magic.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                color:white;
+            }
+            #rotate {
+                animation: rotation 2s linear; 
+                -webkit-animation-play-state: paused;
+                
+            }
+            @keyframes rotation {
+                from{transform: rotate(0deg)}
+                to {transform: rotate(360deg)}
+            }
+            #kasipallo{
+                animation: translate 2.5s ease-in; 
+                -webkit-animation-play-state: paused; 
+            }
+            @keyframes translate {
+                from{color:transparent;}
+                to{color:black;}
+            }
+        </style>
+    </head>
+    <body style='text-align: center;'>
+        <h1 style="text-align: center;">Welcome to use the magic eight ball to find answers</h1>
+        <img src="kasipallo.jpg" style="width: 10%" id="rotate"></img>
+        <h3>Ask me anything</h3>
+        <textarea></textarea><br/>
+        <button onclick="document.getElementById('kasipallo').style.webkitAnimationPlayState='running'; document.getElementById('rotate').style.webkitAnimationPlayState = 'running'">Ask</button><br/><br/>
+        <div id="kasipallo" style="font-weight:bolder; font-size:x-large;">moi</div>
+        <footer>
+            <p>If you want to ask a new question, refresh the page</p>
+        </footer>
+
+        <script src="Kasipallo.js"></script>
+    </body>
+
+
+</html>
