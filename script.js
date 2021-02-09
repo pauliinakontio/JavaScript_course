@@ -214,3 +214,4 @@ if (myTime> 8 && myTime < 16){time.innerHTML = 'time to work';
         time.innerHTML = 'nothing to to';
         etc.
     }
+    //testing
